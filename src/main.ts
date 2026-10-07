@@ -8,7 +8,7 @@ async function main(): Promise<void> {
 try {
   await main();
 } catch (err) {
-  console.error("Error occurred while running the program:", err);
+  console.error("Error occurred while running the program: ", err);
   process.exitCode = 1;
 } finally {
   input.close();
