@@ -1,7 +1,8 @@
 import { input } from "./lib/input.ts";
 
 async function main(): Promise<void> {
-  console.log("Hello World!");
+  const name: string = await input.question("What's your name? ");
+  console.log(`Hello ${name}!`);
 }
 
 try {
